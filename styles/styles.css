@@ -249,7 +249,6 @@ body {
     align-items: center;
     padding: 50px 0;
     background:  #f3f5f4;
-    margin-top: -190px ;
 }
 
 .fish-separator img {
@@ -273,7 +272,6 @@ body {
 }
 .experiences {
     background: #f7f9fa;
-    margin-top: -150px;
 }
 
 .experiences h2 {
@@ -543,5 +541,65 @@ body {
     flex-shrink: 0; /* CLAVE: evita desalineaciones */
 }
 
+.home-intro {
+    background: #0b1f26;
+    padding: 120px 0;
+}
+.home-intro-grid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
 
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.home-intro-text {
+    color: #ffffff;
+}
 
+.intro-eyebrow {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6ec1e4;
+    margin-bottom: 14px;
+}
+
+.home-intro-text h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.home-intro-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d0d8db;
+    margin-bottom: 18px;
+    max-width: 520px;
+}
+.home-intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-intro-image img {
+    width: 100%;
+    max-width: 520px;   /* 🔥 controla el tamaño real */
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.home-intro.reverse .home-intro-grid {
+    direction: rtl;
+}
+
+.home-intro.reverse .home-intro-text,
+.home-intro.reverse .home-intro-image {
+    direction: ltr;
+}
