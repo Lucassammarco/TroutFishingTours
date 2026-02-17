@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trout Fishing Tours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <div class="nav-container">
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <a href="index.html">
+                    <img src="/multimedia/LOGO BLANCO.png" alt="Fishing Guide Logo">
+                </a>
+                <p>TROUT FISHING TOURS</p>
+
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/navegacion/tours.html" target="_self">Tours</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+
+
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+
+        <div class="contact-hero-content container">
+            <h1>Contact Us</h1>
+            <p>Plan your Patagonia fly fishing experience</p>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="container contact-grid">
+
+            <!-- FORM -->
+            <div class="contact-form-wrapper">
+                <h2>Send Us a Message</h2>
+
+               <form action="../php/contact.php" method="POST" class="contact-form">
+
+                    <!-- Honeypot -->
+                    <input type="text" name="website" class="hidden-field">
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" rows="6" placeholder="Tell us about your trip plans..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-outline">Send Message</button>
+
+                </form>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div class="contact-info">
+                <h2>Direct Contact</h2>
+
+                <p><strong>Phone:</strong> +54 9 294 467 7061</p>
+                <p><strong>Email:</strong> info@troutfishingtours.com</p>
+                <p><strong>Location:</strong> Bariloche, Patagonia Argentina</p>
+
+                <p class="contact-note">
+                    We usually respond within 24 hours.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <!-- LOGO -->
+            <div class="footer-brand">
+                <img src="/multimedia/LOGO BLANCO.png" alt="Fishing Guide Logo">
+                <p>Professional fly fishing guide based in Bariloche, Patagonia.
+                    World-class trout fishing experiences.</p>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/navegacion/tours.html" target="_self">Tours and rates</a></li>
+                    <li><a href="#services">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Guide-->
+
+            <div class="guide">
+                <h4>Founder - Head Guide</h4>
+                <img src="/multimedia/JuanN.jpg" alt="Guide - founder">
+            </div>
+            <!-- SOCIAL MEDIA -->
+            <div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/troutfishingtours/?hl=es" target="_blank"
+                            class="social-link">
+                            <img src="/multimedia/LogosRedes/insta.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.facebook.com/troutfishingtours" target="_blank" class="social-link">
+                            <img src="/multimedia/LogosRedes/facebook.svg" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.youtube.com/@troutfishingtours" target="_blank" class="social-link">
+                            <img src="/multimedia/LogosRedes/yt.svg" alt="YouTube">
+                        </a>
+                        <a href="https://www.tripadvisor.com/Profile/TUPERFIL" target="_blank" class="social-link">
+                            <img src="/multimedia/LogosRedes/TripAdvisor.svg" alt="TripAdvisor">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="footer-block">
+                    <h4>CONTACT</h4>
+
+                    <ul class="contact-list">
+                        <li>
+                            <a href="tel:+5492944677061" class="contact-link">
+                                📞 +54 9 294 467 7061
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5492944677061" target="_blank" class="contact-link">
+                                <img src="/multimedia/LogosRedes/wpp.svg" alt="WhatsApp">
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Patagonia Fly Fishing Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
