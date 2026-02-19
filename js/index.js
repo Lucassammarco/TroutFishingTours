@@ -57,3 +57,10 @@ const observer = new IntersectionObserver(entries => {
 
 values.forEach(value => observer.observe(value));
 
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});

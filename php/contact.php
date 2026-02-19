@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // ⚠️ CAMBIAR por el email REAL del dominio en Hostinger
-    $to = "info@troutfishingtours.com";
+    $to = "info@troutfishingtourspatagonia.com";
     $subject = "New message from website contact form";
 
     $body = "
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     ";
 
     // IMPORTANTE: En muchos hostings el From debe ser del mismo dominio
-    $headers = "From: info@troutfishingtours.com\r\n";
+    $headers = "From: info@troutfishingtourspatagonia.com\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 

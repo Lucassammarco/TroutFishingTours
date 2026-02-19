@@ -1138,3 +1138,309 @@ body {
 .hidden-field {
     display: none;
 }
+
+.hamburger {
+    display: none; /* oculto en desktop */
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 2px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Animación X */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* ===================================================== */
+/* =================== MEDIA QUERIES =================== */
+/* ===================================================== */
+
+
+/* ----------- 1200px ----------- */
+@media (max-width: 1200px) {
+
+    .nav-container {
+        padding: 12px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .home-intro-grid {
+        gap: 40px;
+    }
+
+    .split-text {
+        padding: 70px 50px;
+    }
+
+    .water-content {
+        padding: 70px 50px;
+    }
+
+}
+
+
+/* ----------- 992px ----------- */
+@media (max-width: 992px) {
+
+    /* NAV */
+    .nav-menu {
+        gap: 18px;
+    }
+
+    /* HERO */
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* WHY */
+    .why-grid {
+        gap: 50px;
+    }
+
+    /* EXPERIENCES */
+    .experiences-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        height: auto;
+    }
+
+    /* HOME INTRO */
+    .home-intro-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .home-intro-text p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* WATER SPLIT */
+    .water-content h2 {
+        font-size: 2.4rem;
+    }
+
+    /* ABOUT */
+    .split-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .split-text {
+        padding: 60px 40px;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+/* ----------- 768px (TABLET) ----------- */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .logo img {
+        height: 40px;
+    }
+
+    .logo p {
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero {
+        height: 85vh;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .btn-hero {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+
+    /* WHY */
+    .why-us {
+        padding: 70px 0;
+    }
+
+    .why-us h2 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    /* EXPERIENCES */
+    .experiences-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience {
+        padding: 25px;
+    }
+
+    /* FISH */
+    .fish-separator img {
+        width: 70%;
+        height: auto;
+    }
+
+    /* FOOTER */
+    .footer-grid {
+        gap: 40px;
+        padding: 60px 20px 40px;
+    }
+
+    /* ABOUT */
+    .about-intro {
+        padding: 70px 20px;
+    }
+
+    .about-values {
+        padding: 80px 20px;
+    }
+
+    .about-cta {
+        padding: 100px 20px;
+    }
+
+    /* CONTACT */
+    .contact-section {
+        padding: 80px 20px;
+    }
+   /* Mostrar botón hamburguesa */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Convertir menú en panel lateral */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100vh;
+        background: #002b36;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        transition: right 0.4s ease;
+        z-index: 1500;
+    }
+
+    /* Cuando está activo */
+    .nav-menu.active {
+        right: 0;
+    }
+
+    /* Ajustes header */
+    .logo img {
+        height: 40px;
+    }
+
+    .logo p {
+        font-size: 14px;
+    }
+
+
+
+}
+
+
+/* ----------- 480px (MOBILE) ----------- */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* HERO */
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* WHY */
+    .why-list li,
+    .licenses ul li {
+        font-size: 14px;
+    }
+
+    .licenses {
+        padding: 25px;
+        height: auto;
+    }
+
+    /* WATER */
+    .water-content {
+        padding: 40px 20px;
+    }
+
+    .water-content h2 {
+        font-size: 2rem;
+    }
+
+    /* ABOUT */
+    .split-text {
+        padding: 40px 20px;
+    }
+
+    .about-cta h2 {
+        font-size: 2rem;
+    }
+
+    /* CONTACT */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 14px;
+    }
+
+    .contact-info p {
+        font-size: 0.95rem;
+    }
+
+}
+
+

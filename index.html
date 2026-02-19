@@ -33,14 +33,21 @@
 
             <!-- NAVIGATION -->
             <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="/navegacion/tours.html" target="_self">Tours</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/navegacion/About.html">About</a></li>
+                    <li><a href="/navegacion/galery.html">Gallery</a></li>
+                    <li><a href="/navegacion/contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
 
 
         </div>
@@ -105,58 +112,73 @@
     </section>
 
     <section class="home-intro">
-    <div class="home-intro-grid">
+        <div class="home-intro-grid">
 
-        <div class="home-intro-text">
-            <span class="intro-eyebrow">Our story</span>
-            <h1>TROUT FISHING TOURS</h1>
+            <div class="home-intro-text">
+                <span class="intro-eyebrow">Our story</span>
+                <h1>TROUT FISHING TOURS</h1>
 
-            <p>
-                Trout Fishing Tours Patagonia is a locally owned fly fishing operation with over 10 years of experience guiding in Nahuel Huapi National Park and its surrounding waters.
-            </p>
+                <p>
+                    Trout Fishing Tours Patagonia is a locally owned fly fishing operation with over 10 years of
+                    experience guiding in Nahuel Huapi National Park and its surrounding waters.
+                </p>
 
-            <p>
-                For more than a decade, we have dedicated ourselves to exploring, understanding, and responsibly sharing the rivers and Andean lakes of northern Patagonia with anglers from around the world. Our deep connection to this region allows us to offer fly fishing experiences rooted in local knowledge, respect for protected environments, and a strong conservation ethic.
-            </p>
+                <p>
+                    For more than a decade, we have dedicated ourselves to exploring, understanding, and responsibly
+                    sharing the rivers and Andean lakes of northern Patagonia with anglers from around the world. Our
+                    deep connection to this region allows us to offer fly fishing experiences rooted in local knowledge,
+                    respect for protected environments, and a strong conservation ethic.
+                </p>
 
-            <p>
-                We work exclusively with small groups and private trips, focusing on quality over quantity and adapting every day on the water to conditions, seasons, and individual expectations. Whether guiding first-time fly fishers or experienced anglers seeking technical waters, our goal remains the same: to create authentic, well-crafted fly fishing experiences in one of Patagonia’s most iconic landscapes.
-            </p>
+                <p>
+                    We work exclusively with small groups and private trips, focusing on quality over quantity and
+                    adapting every day on the water to conditions, seasons, and individual expectations. Whether guiding
+                    first-time fly fishers or experienced anglers seeking technical waters, our goal remains the same:
+                    to create authentic, well-crafted fly fishing experiences in one of Patagonia’s most iconic
+                    landscapes.
+                </p>
+            </div>
+
+            <div class="home-intro-image">
+                <img src="/multimedia/home.JPEG" alt="Fly fishing in Patagonia">
+            </div>
+
         </div>
+    </section>
 
-        <div class="home-intro-image">
-            <img src="/multimedia/home.JPEG" alt="Fly fishing in Patagonia">
+    <section class="home-intro reverse">
+        <div class="home-intro-grid">
+
+            <div class="home-intro-text">
+                <span class="intro-eyebrow">Patagonia Fly Fishing</span>
+                <h1>Our Waters</h1>
+
+                <p>
+                    Northern Patagonia offers an exceptional diversity of fly fishing environments, from clear mountain
+                    rivers and elegant spring creeks to remote Andean lakes surrounded by native forest.
+                </p>
+
+                <p>
+                    At Trout Fishing Tours Patagonia, we guide our guests through a carefully selected range of rivers
+                    and lakes within Nahuel Huapi National Park and its surrounding waters. Each environment offers a
+                    distinct experience — from calm, forgiving waters ideal for learning, to more technical rivers and
+                    wild lakes that challenge experienced anglers.
+                </p>
+
+                <p>
+                    Our days on the water may include freestone rivers flowing through open valleys, crystal-clear
+                    spring creeks with selective trout, or secluded lakes where changing light and wind shape every
+                    cast. All our waters are chosen for their quality, scenery, and low fishing pressure, allowing for a
+                    genuine connection with Patagonia’s landscapes and wild trout.
+                </p>
+            </div>
+
+            <div class="home-intro-image">
+                <img src="/multimedia/aguas.JPG" alt="Fly fishing rivers in Patagonia">
+            </div>
+
         </div>
-
-    </div>
-</section>
-
-<section class="home-intro reverse">
-    <div class="home-intro-grid">
-
-        <div class="home-intro-text">
-            <span class="intro-eyebrow">Patagonia Fly Fishing</span>
-            <h1>Our Waters</h1>
-
-            <p>
-                Northern Patagonia offers an exceptional diversity of fly fishing environments, from clear mountain rivers and elegant spring creeks to remote Andean lakes surrounded by native forest.
-            </p>
-
-            <p>
-                At Trout Fishing Tours Patagonia, we guide our guests through a carefully selected range of rivers and lakes within Nahuel Huapi National Park and its surrounding waters. Each environment offers a distinct experience — from calm, forgiving waters ideal for learning, to more technical rivers and wild lakes that challenge experienced anglers.
-            </p>
-
-            <p>
-                Our days on the water may include freestone rivers flowing through open valleys, crystal-clear spring creeks with selective trout, or secluded lakes where changing light and wind shape every cast. All our waters are chosen for their quality, scenery, and low fishing pressure, allowing for a genuine connection with Patagonia’s landscapes and wild trout.
-            </p>
-        </div>
-
-        <div class="home-intro-image">
-            <img src="/multimedia/aguas.JPG" alt="Fly fishing rivers in Patagonia">
-        </div>
-
-    </div>
-</section>
+    </section>
 
 
     <section class="experiences bg-image" id="services">
@@ -283,7 +305,7 @@
     </footer>
 
     <!-- JS -->
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 
